@@ -4,6 +4,8 @@ import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './header/sub-header/sub-header.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FooterComponent } from './footer/footer.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -12,10 +14,13 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     SubHeaderComponent,
     LayoutComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    AppRoutingModule
+  ],
+  exports: [LayoutComponent]
 })
 export class CoreModule { }

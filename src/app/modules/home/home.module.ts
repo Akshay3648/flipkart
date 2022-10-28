@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { OfferCarouselComponent } from './components/offer-carousel/offer-carousel.component';
 import { ProductsCarouselComponent } from './components/products-carousel/products-carousel.component';
 import { LoginModalComponent } from './components/login-modal/login-modal.component';
+import { HomeLayoutComponent } from './components/home-layout/home-layout.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -10,10 +12,12 @@ import { LoginModalComponent } from './components/login-modal/login-modal.compon
   declarations: [
     OfferCarouselComponent,
     ProductsCarouselComponent,
-    LoginModalComponent
+    LoginModalComponent,
+    HomeLayoutComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ]
 })
 export class HomeModule { }
